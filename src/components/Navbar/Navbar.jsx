@@ -54,7 +54,7 @@ const Navbar = () => {
                 justify-between items-center'>
                     {/* Logo and Name */}
                     <div>
-                        <a href='#' className='font-bold
+                        <a className='font-bold
                         text-2xl sm:text-3xl flex gap-6 items-center'>
                             <img src={Logo} alt='Logo'
                             className='w-[120px]'/>

@@ -91,7 +91,7 @@ const Cases = () => {
             pt-0 pl-0 pr-20 space-y-3
             ">
               <h1 className='font-bold text-2xl border-b-2 border-primary/40'>业绩案例</h1>
-              <div classname="">
+              <div>
               <div className="grid grid-cols-3 gap-y-10 gap-x-5">
                 {cases.map((data) => (
                   <div key={data.id} className="flex flex-col items-center border-2

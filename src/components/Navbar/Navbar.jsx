@@ -55,11 +55,11 @@ const Navbar = () => {
                     {/* Logo and Name */}
                     <div>
                         <a className='font-bold
-                        text-2xl sm:text-3xl flex gap-6 items-center'>
+                        text-2xl sm:text-3xl flex gap-6 items-center '>
                             <img src={Logo} alt='Logo'
-                            className='w-[120px]'/>
+                            className='w-[60px] sm:w-[120px]'/>
                             <span 
-                            className='text-blue-900'
+                            className='text-blue-900 hidden sm:block'
                             >
                                 楚信环保科技
                             </span>
@@ -67,9 +67,9 @@ const Navbar = () => {
                     </div>
                     {/* Telephone on the right */}
                     <div className='flex items-center gap-3'>
-                        <FaPhone className="text-3xl text-gray-600 drop-shadow-sm cursor-pointer" />
+                        <FaPhone className="sm:text-3xl text-gray-600 drop-shadow-sm cursor-pointer" />
                         <span 
-                        className='text-2xl text-gray-600 font-semibold'
+                        className='sm:text-2xl text-gray-600 font-semibold'
                         >
                             021-3468 1851 
                         </span>
@@ -78,18 +78,18 @@ const Navbar = () => {
             </div>
             {/* lower Navbar */}
             <div className='py-4 flex items-center justify-center'>
-                <ul className='flex items-center gap-12'>
+                <ul className='flex items-center gap-2 sm:gap-12'>
                     {
                         Menu.map((data) => (
                             <li
                             key={data.id}
                             onClick={() => handleNavItemClick(data)}
-                            className='inline-block px-4
+                            className='inline-block px-0 sm:px-4
                             hover:bg-primary hover:text-white 
                             hover:scale-150
                             duration-200 cursor-pointer 
-                            rounded-full font-semibold'
-
+                            rounded-md sm:rounded-full font-semibold
+                            text-xs sm:text-base'
                             >
                             {data.name}
                             </li>  

@@ -49,16 +49,16 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden  bg-gray-100 flex justify-center items-center">
       {/* hero section */}
-      <div className="container pb-0">
+      <div className="container pb-0 ">
         <Slider {...settings}>
           {
             ImageList.map((data) => (
               <div key={data.id}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 pd-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 sm:pd-4">
                   {/* text content section */}
-                  <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
+                  <div className="flex flex-col justify-center sm:gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
                     <h1
-                      className="text-4xl  font-bold"
+                      className="text-lg sm:text-4xl  font-bold"
                     >
                       {data.title}
                     </h1>

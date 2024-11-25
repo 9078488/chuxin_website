@@ -78,18 +78,17 @@ const Navbar = () => {
             </div>
             {/* lower Navbar */}
             <div className='py-4 flex items-center justify-center'>
-                <ul className='flex items-center gap-2 sm:gap-12'>
+                <ul className='flex items-center gap-1 sm:gap-12'>
                     {
                         Menu.map((data) => (
                             <li
                             key={data.id}
                             onClick={() => handleNavItemClick(data)}
-                            className='inline-block px-0 sm:px-4
+                            className='inline-block px-1 sm:px-4
                             hover:bg-primary hover:text-white 
-                            hover:scale-150
-                            duration-200 cursor-pointer 
-                            rounded-md sm:rounded-full font-semibold
-                            text-xs sm:text-base'
+                            sm:hover:scale-150 duration-200 cursor-pointer 
+                            rounded-md sm:rounded-full 
+                            text-xs sm:text-base font-semibold' 
                             >
                             {data.name}
                             </li>  
